@@ -5,6 +5,7 @@ go 1.21.3
 require github.com/labstack/echo/v4 v4.11.3
 
 require (
+	entgo.io/ent v0.12.5 // indirect
 	github.com/a-h/templ v0.2.476 // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/labstack/gommon v0.4.0 // indirect
