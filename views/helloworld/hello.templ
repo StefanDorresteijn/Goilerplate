@@ -8,6 +8,6 @@ type HelloProps struct {
 
 templ Hello(props HelloProps) {
 	@layout.Default() {
-		<h1>Hello, { props.Name }!</h1>
+		<h1 class="uppercase">Hello, { props.Name }!</h1>
 	}
 }

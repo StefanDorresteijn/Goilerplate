@@ -5,8 +5,7 @@ import (
 	helloworldView "github.com/stefandorresteijn/goilerplate/views/helloworld"
 )
 
-type HelloWorldController struct {
-}
+type HelloWorldController struct{}
 
 func (c HelloWorldController) Hello(ctx echo.Context) error {
 	name := ctx.QueryParam("name")

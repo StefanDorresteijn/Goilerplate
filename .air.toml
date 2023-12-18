@@ -5,10 +5,10 @@ tmp_dir = "tmp"
 [build]
 args_bin = []
 bin = "./tmp/main"
-cmd = "templ generate && go build -o ./tmp/main ."
+cmd = "npx tailwindcss -i ./static/css/tailwind.css -o ./static/css/main.css && templ generate && go build -o ./tmp/main ."
 delay = 1000
 exclude_dir = ["assets", "tmp", "vendor", "testdata"]
-exclude_file = []
+exclude_file = ["./static/css/main.css"]
 exclude_regex = ["_test.go", ".*_templ.go"]
 exclude_unchanged = false
 follow_symlink = false
