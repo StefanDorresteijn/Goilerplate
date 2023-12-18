@@ -13,6 +13,7 @@ func loadApp(port string) {
 	loadDotEnv()
 	loadMiddleware(e)
 	loadRoutes(e)
+	e.Static("/static", "static")
 
 	e.Logger.Fatal(e.Start(port))
 }
