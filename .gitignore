@@ -27,3 +27,5 @@ go.work
 # Air build folder
 tmp
 
+# Ignore .env
+.env
