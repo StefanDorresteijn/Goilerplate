@@ -2,8 +2,12 @@ package helloworld
 
 import "github.com/stefandorresteijn/goilerplate/views/layout"
 
-templ Hello(name string) {
+type HelloProps struct {
+	Name string
+}
+
+templ Hello(props HelloProps) {
 	@layout.Default() {
-		<h1>Hello, { name }!</h1>
+		<h1>Hello, { props.Name }!</h1>
 	}
 }

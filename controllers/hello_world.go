@@ -9,5 +9,5 @@ type HelloWorldController struct {
 }
 
 func (c HelloWorldController) Hello(ctx echo.Context) error {
-	return render(ctx, helloworldView.Hello("World"))
+	return render(ctx, helloworldView.Hello(helloworldView.HelloProps{Name: "World"}))
 }
